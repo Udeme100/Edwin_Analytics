@@ -45,7 +45,26 @@ print(model_roe.summary())
 
 # Step 7: Visualization - Pairplot to show relationships between variables
 sns.pairplot(df)
-plt.savefig('pairplot.png')
+plt.savefig('pairplot.png')  # Save the pairplot as an image
+plt.show()
+
+# Step 8: Scatter plots with regression line for each variable
+fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+
+# Inventory Turnover vs Net Profit Margin
+sns.regplot(x='Inventory_Turnover_Ratio', y='Net_Profit_Margin', data=df, ax=axes[0])
+axes[0].set_title('Inventory Turnover vs Net Profit Margin')
+
+# Inventory Turnover vs ROA
+sns.regplot(x='Inventory_Turnover_Ratio', y='ROA', data=df, ax=axes[1])
+axes[1].set_title('Inventory Turnover vs ROA')
+
+# Inventory Turnover vs ROE
+sns.regplot(x='Inventory_Turnover_Ratio', y='ROE', data=df, ax=axes[2])
+axes[2].set_title('Inventory Turnover vs ROE')
+
+plt.tight_layout()
+plt.savefig('regression_plots.png')  # Save the scatter plots with regression lines
 plt.show()
 
 # Step 8: Scatter plots with regression line for each variable
