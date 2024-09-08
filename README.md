@@ -113,7 +113,3 @@ Feel free to fork this repository, submit issues, or create pull requests if you
  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-This README file provides an overview of the project, installation steps, code structure, and visualizations to make it easier for users to understand and run the project. Feel free to customize the content to better suit your repository.
