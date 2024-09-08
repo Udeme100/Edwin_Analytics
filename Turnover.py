@@ -33,7 +33,7 @@ print(model.summary())
 
 # Step 8: Visualization - Plot relationships between variables using pairplot
 sns.pairplot(df)
-plt.show()
+plt.savefig('pairplot.png')  # Save the pairplot with a specific filename
 
 # Step 9: Additional visualization (optional)
 # This plot shows how each independent variable impacts the dependent variable
@@ -52,4 +52,4 @@ sns.regplot(x='ROE', y='Net_Profit_Margin', data=df, ax=axes[2])
 axes[2].set_title('ROE vs Net Profit Margin')
 
 plt.tight_layout()
-plt.show()
+plt.savefig('regression_plots.png')  # Save the individual regression plots with a different filename
