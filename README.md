@@ -109,7 +109,3 @@ These plots help to visually understand the linear relationships between the fin
 Contributing
 
 Feel free to fork this repository, submit issues, or create pull requests if you'd like to contribute to improving this project.
-
- License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
